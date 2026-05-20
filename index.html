@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadhil Abdillah | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+
+<body class="bg-black text-white overflow-x-hidden relative font-[Poppins]">
+
+<!-- LOADER -->
+<div id="loader"
+class="fixed inset-0 z-[999999] bg-black flex items-center justify-center flex-col">
+
+    <h1 class="text-6xl md:text-8xl font-black tracking-widest text-white animate-pulse">
+
+        FADHIL
+
+    </h1>
+
+    <p class="text-gray-500 tracking-[10px] mt-4 text-sm md:text-base">
+
+        PORTFOLIO EXPERIENCE
+
+    </p>
+
+</div>
+
+    <!-- ANIMATED MESH BACKGROUND -->
+<div class="mesh-bg">
+
+    <div class="mesh mesh1"></div>
+    <div class="mesh mesh2"></div>
+    <div class="mesh mesh3"></div>
+    <div class="mesh mesh4"></div>
+
+</div>
+
+    <!-- Cursor Glow -->
+    <div id="cursor-glow"
+        class="fixed w-16 h-16 bg-purple-500/20 blur-3xl rounded-full pointer-events-none z-0">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-black/30 border-b border-white/10">
+
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+
+    <!-- DESKTOP MENU -->
+    <ul class="hidden md:flex items-center gap-10 text-gray-300 text-lg">
+
+        <li>
+            <a href="#home"
+            class="nav-link hover:text-purple-400 duration-300">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="#about"
+            class="nav-link hover:text-purple-400 duration-300">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="#projects"
+            class="nav-link hover:text-purple-400 duration-300">
+                Projects
+            </a>
+        </li>
+
+        <li>
+            <a href="#contact"
+            class="nav-link hover:text-purple-400 duration-300">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+    <!-- RIGHT -->
+    <div class="flex items-center gap-5 z-50">
+
+        <!-- MUSIC -->
+        <button id="music-btn"
+        class="text-xl md:text-3xl hover:text-purple-400 transition duration-300 flex items-center gap-2">
+
+            🎵
+
+        </button>
+
+    </div>
+
+
+</div>
+
+    </nav>
+
+    <!-- Hero -->
+    <section id="home"
+    class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-32 pb-20 relative z-10">
+        
+    <div class="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
+
+            <!-- Profile -->
+            <div id="profile-card"
+            class="relative mb-10 mt-24 transition duration-300 ease-out will-change-transform">
+
+                <!-- Glow -->
+                <div class="absolute inset-0 bg-purple-500 blur-3xl opacity-30 rounded-full"></div>
+
+                <!-- Image -->
+                <img src="/images/profile.png"
+                alt="Fadhil"
+                class="w-52 h-52 md:w-72 md:h-72 object-cover rounded-full border-4 border-white/10 relative z-10 shadow-[0_0_60px_rgba(168,85,247,0.5)]">
+
+            </div>
+
+            <p class="text-gray-400 text-2xl">
+                Hello, I'm
+            </p>
+
+            <h3 id="typing-text"
+            class="text-purple-400 text-2xl md:text-3xl mt-4 font-semibold h-[40px] flex items-center justify-center">
+            </h3>
+
+            <h1 class="text-6xl md:text-8xl font-bold leading-tight mt-4">
+
+                Fadhil
+
+                <br>
+
+                <span class="text-gray-500">
+                    Abdillah
+                </span>
+
+            </h1>
+
+            <p class="mt-8 text-gray-400 max-w-3xl text-xl leading-relaxed">
+
+                Mahasiswa STMIK Mardira Indonesia
+                yang fokus pada web development,
+                Laravel, dan desain modern UI/UX,
+                Design Clothing, dan Logo Design.
+
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-wrap justify-center gap-5 mt-12">
+
+                <a href="#projects"
+                    class="px-8 py-4 bg-white text-black rounded-full hover:scale-105 transition duration-300 shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+
+                    View Projects
+
+                </a>
+
+                <a href="#contact"
+                    class="px-8 py-4 border border-white/20 rounded-full hover:bg-white hover:text-black transition duration-300">
+
+                    Contact Me
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section id="about" class="reveal py-32 px-6 relative z-10">
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+            <div>
+
+                <p class="text-gray-500 uppercase tracking-widest mb-4">
+                    About Me
+                </p>
+
+                <h2 class="text-5xl font-bold leading-tight">
+
+                    Passionate About
+                    Modern Web Design
+                    & Development
+
+                </h2>
+
+            </div>
+
+            <div>
+
+                <p class="text-gray-400 text-lg leading-relaxed">
+
+                    Saya adalah mahasiswa STMIK Mardira Indonesia
+                    yang memiliki minat besar dalam
+                    web development, UI/UX design, dan teknologi modern.
+
+                    Saya fokus menggunakan Laravel untuk membangun
+                    website yang modern, responsive, dan user friendly.
+
+                    Tapi saya akan terus Belajar dan mencari tahu Hal Baru.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section class="reveal py-32 px-6 relative z-10">
+
+        <div class="max-w-6xl mx-auto">
+
+            <p class="text-gray-500 uppercase tracking-widest mb-4 text-center">
+                Skills
+            </p>
+
+            <h2 class="text-5xl font-bold text-center mb-20">
+                Technologies I Use
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div
+                    class="p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md hover:scale-105 transition">
+                    <h3 class="text-2xl font-bold">HTML</h3>
+                    <p class="text-gray-400 mt-3">Modern semantic structure</p>
+                </div>
+
+                <div
+                    class="p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md hover:scale-105 transition">
+                    <h3 class="text-2xl font-bold">CSS</h3>
+                    <p class="text-gray-400 mt-3">Responsive modern styling</p>
+                </div>
+
+                <div
+                    class="p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md hover:scale-105 transition">
+                    <h3 class="text-2xl font-bold">Laravel</h3>
+                    <p class="text-gray-400 mt-3">PHP web framework</p>
+                </div>
+
+                <div
+                    class="p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md hover:scale-105 transition">
+                    <h3 class="text-2xl font-bold">UI/UX</h3>
+                    <p class="text-gray-400 mt-3">Modern interface design</p>
+                </div>
+
+                <div
+                    class="p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md hover:scale-105 transition">
+                    <h3 class="text-2xl font-bold">Clothing Design</h3>
+                    <p class="text-gray-400 mt-3">Streetwear concept design</p>
+                </div>
+
+                <div
+                    class="p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md hover:scale-105 transition">
+                    <h3 class="text-2xl font-bold">Logo Brand</h3>
+                    <p class="text-gray-400 mt-3">Modern branding identity</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+<section class="py-24 px-6 relative z-10">
+
+    <div class="max-w-6xl mx-auto">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+            <!-- Item -->
+            <div class="text-center reveal">
+
+                <h2 class="counter text-5xl font-bold text-purple-400"
+                data-target="10">
+
+                    0
+
+                </h2>
+
+                <p class="text-gray-400 mt-4">
+                    Projects
+                </p>
+
+            </div>
+
+            <!-- Item -->
+            <div class="text-center reveal">
+
+                <h2 class="counter text-5xl font-bold text-pink-400"
+                data-target="3">
+
+                    0
+
+                </h2>
+
+                <p class="text-gray-400 mt-4">
+                    Years Learning
+                </p>
+
+            </div>
+
+            <!-- Item -->
+            <div class="text-center reveal">
+
+                <h2 class="counter text-5xl font-bold text-cyan-400"
+                data-target="5">
+
+                    0
+
+                </h2>
+
+                <p class="text-gray-400 mt-4">
+                    Design Skills
+                </p>
+
+            </div>
+
+            <!-- Item -->
+            <div class="text-center reveal">
+
+                <h2 class="counter text-5xl font-bold text-green-400"
+                data-target="100">
+
+                    0
+
+                </h2>
+
+                <p class="text-gray-400 mt-4">
+                    Passion
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+ <!-- PROJECTS -->
+<section id="projects" class="py-24 md:py-32 px-4 md:px-6 relative z-10 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- TITLE -->
+        <div class="text-center mb-16 md:mb-24">
+
+            <p class="text-purple-400 uppercase tracking-[4px] md:tracking-[6px] text-xs md:text-sm mb-4">
+                Featured Projects
+            </p>
+
+            <h2 class="text-4xl md:text-6xl font-bold">
+                My Latest Works
+            </h2>
+
+        </div>
+
+        <!-- PROJECT LIST -->
+        <div class="flex flex-col gap-16 md:gap-24">
+
+            <!-- PROJECT CARD -->
+            <div class="grid lg:grid-cols-2 gap-0 items-center rounded-[30px] md:rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden">
+
+                <!-- IMAGE -->
+                <div class="relative">
+
+                    <img src="/images/projects/presensi-dashboard.png"
+                        class="w-full h-[250px] md:h-full object-cover"
+                        alt="">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+
+                </div>
+
+                <!-- CONTENT -->
+                <div class="p-6 md:p-14">
+
+                    <span class="inline-block px-4 py-2 rounded-full bg-purple-500/10 border border-purple-400/20 text-purple-300 text-xs md:text-sm">
+
+                        Featured Project
+
+                    </span>
+
+                    <h3 class="text-4xl md:text-5xl lg:text-6xl leading-tight font-bold">
+
+                        Laboratory Attendance System
+
+                    </h3>
+
+                    <p class="text-gray-400 text-base md:text-lg leading-relaxed mt-6">
+
+                        Web-based laboratory attendance management system
+                        developed for SMK Bina Siswa 2 Cililin
+                        with real-time attendance monitoring and
+                        role-based dashboard management.
+
+                    </p>
+
+                    <!-- TECH -->
+                    <div class="flex flex-wrap gap-3 mt-8">
+
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">
+                            Laravel
+                        </span>
+
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">
+                            PHP
+                        </span>
+
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">
+                            MySQL
+                        </span>
+
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">
+                            TailwindCSS
+                        </span>
+
+                    </div>
+
+                    <!-- BUTTON -->
+                    <div class="mt-10">
+
+                        <a href="/docs/presensi-report.pdf"
+                        target="_blank"
+                        class="inline-block px-7 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:scale-105 transition duration-300">
+
+                            Documentation
+
+                        </a>
+                        </div>
+                </div>
+
+            </div>
+
+            <!-- UI UX -->
+            <div class="grid lg:grid-cols-2 gap-0 items-center rounded-[30px] md:rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden">
+
+                <!-- IMAGE -->
+                <div class="relative">
+
+                    <img src="/images/projects/uiux-presensi.png"
+                        class="w-full h-[250px] md:h-full object-cover"
+                        alt="">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+
+                </div>
+
+                <!-- CONTENT -->
+                <div class="p-6 md:p-14">
+
+                    <span class="inline-block px-4 py-2 rounded-full bg-pink-500/10 border border-pink-400/20 text-pink-300 text-xs md:text-sm">
+
+                        UI/UX Case Study
+
+                    </span>
+
+                    <h3 class="text-4xl md:text-5xl lg:text-6xl leading-tight font-bold">
+
+                        Laboratory Attendance UI/UX
+
+                    </h3>
+
+                    <p class="text-gray-400 text-base md:text-lg leading-relaxed mt-6">
+
+                        User interface and user experience design
+                        for laboratory attendance management system
+                        created using Figma with modern dashboard
+                        and responsive workflow.
+
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 mt-8">
+
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">
+                            Figma
+                        </span>
+
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">
+                            UI Design
+                        </span>
+
+                        <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">
+                            UX Research
+                        </span>
+
+                    </div>
+
+                    <div class="mt-10">
+
+                        <a href="https://www.figma.com/design/nhyuIYl8MH2Ui7lsyZtdPD/Untitled?node-id=0-1&t=Ai71C4MryXZoQ7eC-1"
+                        target="_blank"
+                        class="inline-block px-7 py-3 rounded-full bg-gradient-to-r from-pink-500 to-orange-500 hover:scale-105 transition duration-300">
+
+                            View Design
+
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- IOT -->
+            <div class="grid lg:grid-cols-2 gap-0 items-center rounded-[30px] md:rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden">
+
+                <!-- IMAGE -->
+                <div class="relative order-1 lg:order-2">
+
+                    <img src="/images/projects/iot-project.png"
+                        class="w-full h-[250px] md:h-full object-cover"
+                        alt="">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+
+                </div>
+
+                <!-- CONTENT -->
+                <div class="p-6 md:p-14 order-2 lg:order-1">
+
+                    <span class="inline-block px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 text-xs md:text-sm">
+
+                        IoT Project
+
+                    </span>
+
+                    <h3 class="text-4xl md:text-5xl lg:text-6xl leading-tight font-bold">
+
+                        Smart Parking IoT
+
+                    </h3>
+
+                    <p class="text-gray-400 text-base md:text-lg leading-relaxed mt-6">
+
+                        IoT-based smart parking system with
+                        real-time vehicle monitoring and
+                        automatic sensor detection.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- BRAND -->
+            <div class="grid lg:grid-cols-2 gap-0 items-center rounded-[30px] md:rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden">
+
+                <!-- IMAGE -->
+                <div class="relative">
+
+                    <img src="/images/projects/brand-design.png"
+                        class="w-full h-[250px] md:h-full object-cover"
+                        alt="">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+
+                </div>
+
+                <!-- CONTENT -->
+                <div class="p-6 md:p-14">
+
+                    <span class="inline-block px-4 py-2 rounded-full bg-white/10 border border-white/10 text-gray-300 text-xs md:text-sm">
+
+                        Creative Brand Design
+
+                    </span>
+
+                    <h3 class="text-3xl sm:text-4xl md:text-7xl font-bold leading-tight break-words mt-6">
+
+                        Streetwear Brand Concept
+
+                    </h3>
+
+                    <p class="text-gray-400 text-base md:text-lg leading-relaxed mt-6">
+
+                        Creative streetwear and fashion brand design
+                        including logo identity, apparel concepts,
+                        visual branding, and modern fashion direction.
+
+                    </p>
+
+                    <div class="mt-10">
+
+                        <a href="https://drive.google.com/drive/folders/1WWJbEEV8UwiNHMblcxmSpMLrovyjx4TU?usp=sharing"
+                        target="_blank"
+                        class="inline-block px-7 py-3 rounded-full bg-white text-black hover:scale-105 transition duration-300">
+
+                            View Brand Design
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Contact -->
+    <section id="contact" class="reveal py-32 px-6 relative z-10">
+
+        <div class="max-w-4xl mx-auto text-center">
+
+            <p class="text-gray-500 uppercase tracking-widest mb-4">
+                Contact
+            </p>
+
+            <h2 class="text-5xl font-bold">
+                Let's Work Together
+            </h2>
+
+            <p class="text-gray-400 mt-6 text-lg">
+
+                Tertarik bekerja sama atau membuat project bersama?
+                Hubungi saya melalui email atau social media.
+
+            </p>
+
+            <div class="flex justify-center gap-5 mt-12 flex-wrap">
+
+                <a href="https://wa.me/6283117360716" target="_blank"
+                    class="px-8 py-4 bg-green-500 rounded-full hover:scale-105 transition duration-300">
+
+                    WhatsApp
+
+                </a>
+
+                <a href="https://www.instagram.com/fdhl_abdllh10/" target="_blank"
+                    class="px-8 py-4 border border-white/10 rounded-full hover:bg-pink-500 transition duration-300">
+
+                    Instagram
+
+                </a>
+
+                <a href="https://github.com/Fadhilabdillah10" target="_blank"
+                    class="px-8 py-4 border border-white/10 rounded-full hover:bg-white hover:text-black transition duration-300">
+
+                    GitHub
+
+                </a>
+
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abdillahfadhil771@gmail.com"
+                target="_blank"
+                class="px-8 py-4 border border-white/10 rounded-full hover:bg-blue-500 transition duration-300">
+
+                    Email
+
+                </a>
+
+                <a href="/cv/CV_Fadhil_Abdillah.pdf" download
+                    class="px-8 py-4 bg-purple-500 rounded-full hover:scale-105 transition duration-300">
+
+                    Download CV
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- AI ASSISTANT -->
+<div id="ai-chat"
+class="fixed bottom-32 right-6 md:right-8 z-50 w-[92%] md:w-80 bg-black/70 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden hidden shadow-[0_0_40px_rgba(168,85,247,0.2)]">
+
+    <!-- Header -->
+    <div class="p-4 border-b border-white/10 flex items-center justify-between">
+
+        <div>
+
+            <h3 class="font-semibold text-lg">
+                AI Assistant
+            </h3>
+
+            <p class="text-xs text-gray-400">
+                Ask something about Fadhil
+            </p>
+
+        </div>
+
+        <button id="close-chat"
+        class="text-gray-400 hover:text-white">
+
+            ✕
+
+        </button>
+
+    </div>
+
+    <!-- Messages -->
+    <div id="chat-box"
+    class="p-4 h-80 overflow-y-auto text-sm text-gray-300 space-y-4">
+
+        <div class="bg-white/10 p-3 rounded-2xl max-w-[85%]">
+            Halo 👋
+            Saya AI Assistant portfolio Fadhil.
+        </div>
+
+        <div class="bg-purple-500/20 p-3 rounded-2xl max-w-[85%]">
+            Coba ketik:
+            <br><br>
+
+            • skills
+            <br>
+            • contact
+            <br>
+            • projects
+            <br>
+            • about
+
+        </div>
+
+    </div>
+
+    <!-- Input -->
+    <div class="p-4 border-t border-white/10 flex flex-col sm:flex-row gap-3">
+
+        <input type="text"
+        id="chat-input"
+        placeholder="Type command..."
+        class="w-full flex-1 px-4 py-3 rounded-2xl bg-white/10 border border-white/10 outline-none text-white placeholder:text-gray-500">
+
+        <button id="send-btn"
+        class="w-full sm:w-auto px-5 py-3 whitespace-nowrap rounded-2xl bg-purple-500 hover:bg-purple-600 transition">
+
+            Send
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- AI CHAT BUBBLE -->
+<div class="fixed bottom-6 left-6 z-50">
+
+    <button id="openAssistant"
+    class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-2xl animate-bounce shadow-[0_0_30px_rgba(168,85,247,0.5)] hover:scale-110 transition duration-300">
+
+        🤖
+
+    </button>
+
+</div>
+
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-8 text-center text-gray-500">
+
+        © 2026 Fadhil Abdillah.
+        All Rights Reserved.
+
+    </footer>
+
+    <!-- Music -->
+    <audio id="bg-music" loop>
+        <source src="/music/blues.mp3" type="audio/mpeg">
+    </audio>
+
+
+<script>
+
+
+/*
+=========================================
+TYPING EFFECT
+=========================================
+*/
+
+const texts = [
+    "Laravel Developer",
+    "UI/UX Designer",
+    "Creative Programmer"
+];
+
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+const typingText =
+document.getElementById("typing-text");
+
+function typeEffect() {
+
+    const current =
+    texts[textIndex];
+
+    if (isDeleting) {
+
+        typingText.textContent =
+        current.substring(0, charIndex--);
+
+    } else {
+
+        typingText.textContent =
+        current.substring(0, charIndex++);
+
+    }
+
+    if (!isDeleting &&
+        charIndex === current.length + 1) {
+
+        isDeleting = true;
+
+        setTimeout(typeEffect, 1500);
+
+        return;
+
+    }
+
+    if (isDeleting &&
+        charIndex === 0) {
+
+        isDeleting = false;
+
+        textIndex++;
+
+        if (textIndex >= texts.length) {
+
+            textIndex = 0;
+
+        }
+
+    }
+
+    setTimeout(typeEffect,
+    isDeleting ? 50 : 100);
+
+}
+
+typeEffect();
+
+
+
+    /*
+    =========================================
+    CURSOR GLOW
+    =========================================
+    */
+
+    document.addEventListener("mousemove", (e) => {
+
+        const glow = document.getElementById("cursor-glow");
+
+        glow.style.left = e.clientX + "px";
+        glow.style.top = e.clientY + "px";
+
+    });
+
+    /*
+    =========================================
+    SCROLL REVEAL
+    =========================================
+    */
+
+    function reveal() {
+
+        const reveals = document.querySelectorAll(".reveal");
+
+        reveals.forEach((el) => {
+
+            const windowHeight = window.innerHeight;
+            const revealTop = el.getBoundingClientRect().top;
+
+            if (revealTop < windowHeight - 100) {
+
+                el.classList.add("active");
+
+            }
+
+        });
+
+    }
+
+    window.addEventListener("scroll", reveal);
+
+    /*
+    =========================================
+    MUSIC PLAYER
+    =========================================
+    */
+
+    const music = document.getElementById("bg-music");
+    const musicBtn = document.getElementById("music-btn");
+
+    let isPlaying = false;
+
+    musicBtn.addEventListener("click", () => {
+
+        if (!isPlaying) {
+
+            music.play();
+
+            musicBtn.innerHTML = "⏸";
+
+            isPlaying = true;
+
+        } else {
+
+            music.pause();
+
+            musicBtn.innerHTML = "🎵";
+
+            isPlaying = false;
+
+        }
+
+    });
+
+   /*
+=========================================
+SMART AI ASSISTANT
+=========================================
+*/
+
+const openChat = document.getElementById("openAssistant");
+const closeChat = document.getElementById("close-chat");
+const aiChat = document.getElementById("ai-chat");
+
+const sendBtn = document.getElementById("send-btn");
+const chatInput = document.getElementById("chat-input");
+const chatBox = document.getElementById("chat-box");
+
+openChat.addEventListener("click", () => {
+
+    aiChat.classList.remove("hidden");
+
+});
+
+closeChat.addEventListener("click", () => {
+
+    aiChat.classList.add("hidden");
+
+});
+
+function addMessage(message, isUser = false){
+
+    const div = document.createElement("div");
+
+    div.className =
+        isUser
+        ? "bg-purple-500 p-3 rounded-2xl ml-auto max-w-[85%] text-white"
+        : "bg-white/10 p-3 rounded-2xl max-w-[85%]";
+
+    div.innerHTML = message;
+
+    chatBox.appendChild(div);
+
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+}
+
+function aiReply(text){
+
+    text = text.toLowerCase();
+
+    if(text.includes("skills")){
+
+        return `
+        🚀 Skills:
+        <br><br>
+
+        • Laravel
+        <br>
+        • UI/UX Design
+        <br>
+        • Web Development
+        <br>
+        • Clothing Design
+        <br>
+        • Logo Design
+        `;
+
+    }
+
+    else if(text.includes("contact")){
+
+        return `
+        📞 Contact:
+        <br><br>
+
+        WhatsApp:
+        083117360716
+        <br><br>
+
+        Email:
+        abdillahfadhil771@gmail.com
+        `;
+
+    }
+
+    else if(text.includes("projects")){
+
+        return `
+        💻 Projects:
+        <br><br>
+
+        • Smart Parking IoT
+        <br>
+        • Laravel Portfolio
+        <br>
+        • UI/UX Design
+        <br>
+        • Laboratory Attendance App
+        `;
+
+    }
+
+    else if(text.includes("about")){
+
+        return `
+        👨‍💻 About:
+        <br><br>
+
+        Fadhil Abdillah adalah mahasiswa
+        STMIK Mardira Indonesia
+        yang fokus pada Laravel,
+        UI/UX Design, dan modern web development.
+        `;
+
+    }
+
+    else{
+
+        return `
+        🤖 Sorry,
+        command belum tersedia.
+        <br><br>
+
+        Coba:
+        skills,
+        projects,
+        about,
+        atau contact.
+        `;
+
+    }
+
+}
+
+sendBtn.addEventListener("click", () => {
+
+    const userText = chatInput.value;
+
+    if(userText.trim() === "") return;
+
+    addMessage(userText, true);
+
+    setTimeout(() => {
+
+        addMessage(aiReply(userText));
+
+    }, 600);
+
+    chatInput.value = "";
+
+});
+
+chatInput.addEventListener("keypress", (e) => {
+
+    if(e.key === "Enter"){
+
+        sendBtn.click();
+
+    }
+
+});
+
+
+    /*
+    =========================================
+    START
+    =========================================
+    */
+
+
+    /*
+=========================================
+ACTIVE NAVBAR
+=========================================
+*/
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach((section) => {
+
+        const sectionTop = section.offsetTop;
+
+        if (scrollY >= sectionTop - 200) {
+
+            current = section.getAttribute("id");
+
+        }
+
+    });
+
+    navLinks.forEach((link) => {
+
+        link.classList.remove("text-purple-400");
+
+        if (link.getAttribute("href") === `#${current}`) {
+
+            link.classList.add("text-purple-400");
+
+        }
+
+    });
+
+});
+
+/*
+=========================================
+LOADING SCREEN
+=========================================
+*/
+
+window.addEventListener("load", () => {
+
+    const loader =
+    document.getElementById("loader");
+
+    setTimeout(() => {
+
+        loader.style.opacity = "0";
+
+        loader.style.pointerEvents = "none";
+
+        setTimeout(() => {
+
+            loader.style.display = "none";
+
+        }, 700);
+
+    }, 1800);
+
+});
+
+/*
+=========================================
+COUNTER
+=========================================
+*/
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+    counter.innerText = "0";
+
+    const updateCounter = () => {
+
+        const target = +counter.getAttribute("data-target");
+
+        const current = +counter.innerText;
+
+        const increment = target / 100;
+
+        if(current < target){
+
+            counter.innerText =
+                `${Math.ceil(current + increment)}`;
+
+            setTimeout(updateCounter, 20);
+
+        } else {
+
+            counter.innerText = target + "+";
+
+        }
+
+    };
+
+    updateCounter();
+
+});
+
+/*
+=========================================
+3D PROJECT CARD FIX
+=========================================
+*/
+
+const cards = document.querySelectorAll(".project-card");
+
+cards.forEach((card) => {
+
+    card.addEventListener("mousemove", (e) => {
+
+        const rect = card.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = ((y - centerY) / 30) * -1;
+        const rotateY = ((x - centerX) / 30);
+
+        card.style.transform =
+        `
+        perspective(1000px)
+        rotateX(${rotateX}deg)
+        rotateY(${rotateY}deg)
+        scale(1.02)
+        `;
+
+    });
+
+    card.addEventListener("mouseleave", () => {
+
+        card.style.transform =
+        `
+        perspective(1000px)
+        rotateX(0deg)
+        rotateY(0deg)
+        scale(1)
+        `;
+
+    });
+
+});
+
+/*
+=========================================
+3D PROFILE HOVER
+=========================================
+*/
+
+const profileCard =
+document.getElementById("profile-card");
+
+profileCard.addEventListener("mousemove", (e) => {
+
+    const rect =
+    profileCard.getBoundingClientRect();
+
+    const x =
+    e.clientX - rect.left;
+
+    const y =
+    e.clientY - rect.top;
+
+    const centerX =
+    rect.width / 2;
+
+    const centerY =
+    rect.height / 2;
+
+    const rotateX =
+    ((y - centerY) / 25);
+
+    const rotateY =
+    ((centerX - x) / 25);
+
+    profileCard.style.transform =
+    `
+    perspective(1000px)
+    rotateX(${rotateX}deg)
+    rotateY(${rotateY}deg)
+    scale(1.03)
+    `;
+
+});
+
+profileCard.addEventListener("mouseleave", () => {
+
+    profileCard.style.transform =
+    `
+    perspective(1000px)
+    rotateX(0deg)
+    rotateY(0deg)
+    scale(1)
+    `;
+
+});
+
+/*
+=========================================
+SMOOTH TRAILING CURSOR
+=========================================
+*/
+
+const cursor =
+document.getElementById("cursor-glow");
+
+let mouseX = 0;
+let mouseY = 0;
+
+let currentX = 0;
+let currentY = 0;
+
+document.addEventListener("mousemove",(e)=>{
+
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+});
+
+function animateCursor(){
+
+    currentX +=
+    (mouseX - currentX) * 0.15;
+
+    currentY +=
+    (mouseY - currentY) * 0.15;
+
+    cursor.style.left =
+    currentX + "px";
+
+    cursor.style.top =
+    currentY + "px";
+
+    requestAnimationFrame(animateCursor);
+
+}
+
+animateCursor();
+
+/*
+=========================================
+MAGNETIC BUTTON EFFECT
+=========================================
+*/
+
+const magneticItems =
+document.querySelectorAll("button,a");
+
+magneticItems.forEach((item)=>{
+
+    item.addEventListener("mousemove",(e)=>{
+
+        const rect =
+        item.getBoundingClientRect();
+
+        const x =
+        e.clientX - rect.left - rect.width / 2;
+
+        const y =
+        e.clientY - rect.top - rect.height / 2;
+
+        item.style.transform =
+        `
+        translate(${x * 0.2}px, ${y * 0.2}px)
+        scale(1.05)
+        `;
+
+        cursor.style.width = "70px";
+        cursor.style.height = "70px";
+
+        cursor.style.background =
+        "rgba(236,72,153,.35)";
+
+    });
+
+    item.addEventListener("mouseleave",()=>{
+
+        item.style.transform =
+        `
+        translate(0px,0px)
+        scale(1)
+        `;
+
+        cursor.style.width = "35px";
+        cursor.style.height = "35px";
+
+        cursor.style.background =
+        "rgba(168,85,247,.35)";
+
+    });
+
+});
+
+/*
+=========================================
+HOVER EFFECT
+=========================================
+*/
+
+const hoverItems =
+document.querySelectorAll("a, button");
+
+hoverItems.forEach((item)=>{
+
+    item.addEventListener("mouseenter", ()=>{
+
+        cursor.style.width = "70px";
+        cursor.style.height = "70px";
+
+        cursor.style.background =
+        "rgba(236,72,153,.35)";
+
+    });
+
+    item.addEventListener("mouseleave", ()=>{
+
+        cursor.style.width = "35px";
+        cursor.style.height = "35px";
+
+        cursor.style.background =
+        "rgba(168,85,247,.35)";
+
+    });
+
+});
+
+/*
+=========================================
+SMOOTH INERTIA SCROLL
+=========================================
+*/
+
+const lenis = new Lenis({
+
+    duration: 1.2,
+    smoothWheel: true,
+    smoothTouch: false,
+    touchMultiplier: 2,
+
+});
+
+function raf(time){
+
+    lenis.raf(time);
+
+    requestAnimationFrame(raf);
+
+}
+
+requestAnimationFrame(raf);
+</script>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor-glow"></div>
+
+</body>
+
+</html>
