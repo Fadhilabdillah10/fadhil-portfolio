@@ -13,8 +13,9 @@
         rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/dist/lenis.min.js"></script>
-    <style>
+
 </head>
 
 <body class="scroll-smooth text-white overflow-x-hidden relative font-[Poppins]"
@@ -1470,20 +1471,21 @@ requestAnimationFrame(raf);
 <!-- CUSTOM CURSOR -->
 <div id="cursor-glow"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
 
 <script>
 const lenis = new Lenis({
-    duration: 1.2,
+    lerp: 0.08,
     smoothWheel: true
-});
+})
 
 function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
+    lenis.raf(time)
+    requestAnimationFrame(raf)
 }
 
-requestAnimationFrame(raf);
+requestAnimationFrame(raf)
 </script>
 
 </body>
