@@ -1475,17 +1475,21 @@ requestAnimationFrame(raf);
 <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
 
 <script>
-const lenis = new Lenis({
-    lerp: 0.08,
-    smoothWheel: true
-})
+window.onload = () => {
 
-function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-}
+    const lenis = new Lenis({
+        lerp: 0.08,
+        smoothWheel: true
+    });
 
-requestAnimationFrame(raf)
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+};
 </script>
 
 </body>
