@@ -103,7 +103,7 @@ linear-gradient(to bottom, #020617, #000000);
             <button id="pause-btn" class="music-btn">
                 ⏸
             </button>
-            
+
         </div>
 
 
@@ -905,32 +905,18 @@ linear-gradient(to bottom, #020617, #000000);
         */
 
         const music = document.getElementById("bg-music");
-        const musicBtn = document.getElementById("music-btn");
 
-        let isPlaying = false;
+    const playBtn = document.getElementById("play-btn");
+    const pauseBtn = document.getElementById("pause-btn");
 
-        musicBtn.addEventListener("click", () => {
+    playBtn.addEventListener("click", () => {
+        music.play();
+    });
 
-            if (!isPlaying) {
-
-                music.play();
-
-                musicBtn.innerHTML = "⏸";
-
-                isPlaying = true;
-
-            } else {
-
-                music.pause();
-
-                musicBtn.innerHTML = "🎵";
-
-                isPlaying = false;
-
-            }
-
-        });
-
+    pauseBtn.addEventListener("click", () => {
+        music.pause();
+    });
+    
         /*
      =========================================
      SMART AI ASSISTANT
