@@ -656,16 +656,24 @@ body.light-mode span{
    LIGHT MODE PREMIUM
 ========================================= */
 
-body.light-mode {
-    background: linear-gradient(
-        135deg,
-        #f8fafc 0%,
-        #eef2ff 35%,
-        #f5f3ff 70%,
-        #ffffff 100%
-    );
+body.light-mode{
 
-    color: #111827;
+    background:
+    radial-gradient(circle at 20% 20%,
+    rgba(168,85,247,.18),
+    transparent 35%),
+
+    radial-gradient(circle at 80% 60%,
+    rgba(59,130,246,.18),
+    transparent 35%),
+
+    linear-gradient(
+    135deg,
+    #f8fafc,
+    #eef2ff,
+    #f5f3ff,
+    #ffffff);
+
 }
 
 /* Glow background */
@@ -684,6 +692,20 @@ body.light-mode::before{
 
     pointer-events:none;
     z-index:-1;
+}
+
+body.light-mode .profile-glow{
+
+    background:
+    radial-gradient(circle,
+    rgba(168,85,247,.6),
+    rgba(59,130,246,.3),
+    transparent 70%);
+
+    opacity:.9;
+
+    animation: glowFloat 6s ease-in-out infinite;
+
 }
 
 /* Text */
@@ -737,9 +759,44 @@ body.light-mode .skill-card{
 }
 body.light-mode .profile-image{
 
-    box-shadow:
-        0 0 100px rgba(168,85,247,.4),
-        0 0 180px rgba(59,130,246,.15);
+   box-shadow:
+    0 0 80px rgba(168,85,247,.45),
+    0 0 160px rgba(59,130,246,.20),
+    0 0 240px rgba(168,85,247,.15);
+
+
+}
+
+body.light-mode::after{
+
+    content:"";
+
+    position:fixed;
+    inset:0;
+
+    background:
+    radial-gradient(circle,
+    rgba(168,85,247,.12),
+    transparent 60%);
+
+    filter:blur(100px);
+
+    animation: floatGlow 10s ease-in-out infinite;
+
+    pointer-events:none;
+
+    z-index:-1;
+}
+
+@keyframes floatGlow{
+
+    0%,100%{
+        transform:translate(-80px,-40px);
+    }
+
+    50%{
+        transform:translate(80px,40px);
+    }
 
 }
 
@@ -757,4 +814,16 @@ p{
         color .5s ease,
         border-color .5s ease,
         box-shadow .5s ease;
+}
+
+@keyframes glowFloat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.08);
+    }
+
 }
