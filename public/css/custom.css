@@ -530,23 +530,20 @@ html.lenis body{
 }
 
 .music-btn{
+    width:30px;
+    height:30px;
 
-    width:56px;
-    height:56px;
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius:12px;
 
-    border:1px solid rgba(255,255,255,.25);
-    border-radius:16px;
-
-    background:rgba(255,255,255,.05);
+    background:rgba(255,255,255,0.05);
 
     color:white;
-
     font-size:20px;
 
     cursor:pointer;
 
-    transition:.3s ease;
-
+    transition:all .3s ease;
 }
 
 .music-btn:hover{
@@ -555,6 +552,19 @@ html.lenis body{
     box-shadow:0 0 20px rgba(59,130,246,.4);
 }
 
+.music-floating{
+
+    position: fixed;
+
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    gap: 12px;
+
+    z-index: 9999;
+
+}
 
 body.light-mode{
 
