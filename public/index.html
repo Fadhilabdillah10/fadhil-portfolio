@@ -1258,60 +1258,7 @@ if (music && pauseBtn) {
 
         });
 
-        
-        /*
-        =========================================
-        MAGNETIC BUTTON EFFECT
-        =========================================
-        */
 
-        const magneticItems =
-            document.querySelectorAll("button,a");
-
-        magneticItems.forEach((item) => {
-
-            item.addEventListener("mousemove", (e) => {
-
-                const rect =
-                    item.getBoundingClientRect();
-
-                const x =
-                    e.clientX - rect.left - rect.width / 2;
-
-                const y =
-                    e.clientY - rect.top - rect.height / 2;
-
-                item.style.transform =
-                    `
-        translate(${x * 0.2}px, ${y * 0.2}px)
-        scale(1.05)
-        `;
-
-                cursor.style.width = "70px";
-                cursor.style.height = "70px";
-
-                cursor.style.background =
-                    "rgba(236,72,153,.35)";
-
-            });
-
-            item.addEventListener("mouseleave", () => {
-
-                item.style.transform =
-                    `
-        translate(0px,0px)
-        scale(1)
-        `;
-
-                cursor.style.width = "35px";
-                cursor.style.height = "35px";
-
-                cursor.style.background =
-                    "rgba(168,85,247,.35)";
-
-            });
-
-        });
 
         /*
         =========================================
