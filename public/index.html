@@ -909,14 +909,18 @@ linear-gradient(to bottom, #020617, #000000);
     const playBtn = document.getElementById("play-btn");
     const pauseBtn = document.getElementById("pause-btn");
 
+    if (music && playBtn) {
     playBtn.addEventListener("click", () => {
         music.play();
     });
+}
 
+if (music && pauseBtn) {
     pauseBtn.addEventListener("click", () => {
         music.pause();
     });
-    
+}
+
         /*
      =========================================
      SMART AI ASSISTANT
