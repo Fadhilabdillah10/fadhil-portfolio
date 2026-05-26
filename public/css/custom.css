@@ -300,25 +300,6 @@ ANIMATED MESH BACKGROUND
    CUSTOM CURSOR
 ======================================== */
 
-.cursor {
-
-    width: 14px;
-    height: 14px;
-    border: 2px solid rgba(255,255,255,0.5);
-    border-radius: 999px;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    transition:
-        transform 0.08s linear,
-        width 0.2s ease,
-        height 0.2s ease;
-
-    mix-blend-mode: difference;
-    backdrop-filter: blur(4px);
-
-}
 
 /* ========================================
    MOUSE GLOW
