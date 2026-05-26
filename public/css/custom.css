@@ -294,14 +294,6 @@ ANIMATED MESH BACKGROUND
 
 }
 
-/* ========================================
-   CUSTOM CURSOR
-======================================== */
-
-
-/* ========================================
-   MOUSE GLOW
-======================================== */
 
 body::before {
 
@@ -530,26 +522,42 @@ html.lenis body{
 }
 
 .music-btn{
-    width:30px;
-    height:30px;
 
-    border:1px solid rgba(255,255,255,0.3);
-    border-radius:12px;
+    width:48px;
+    height:48px;
 
-    background:rgba(255,255,255,0.05);
+    border-radius:16px;
 
-    color:white;
-    font-size:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-    cursor:pointer;
+    backdrop-filter:blur(18px);
 
-    transition:all .3s ease;
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.3s;
+
 }
 
 .music-btn:hover{
+
     transform:translateY(-3px);
-    background:rgba(59,130,246,.15);
-    box-shadow:0 0 20px rgba(59,130,246,.4);
+
+    box-shadow:
+        0 8px 25px rgba(168,85,247,.35);
+
+}
+body.light-mode .music-btn{
+
+    background:rgba(255,255,255,.8);
+
+    border:1px solid rgba(0,0,0,.08);
+
+    color:#111827;
+
 }
 
 .music-floating{
@@ -643,4 +651,110 @@ body.light-mode span{
 
     color:#4b5563 !important;
 
+}
+/* =========================================
+   LIGHT MODE PREMIUM
+========================================= */
+
+body.light-mode {
+    background: linear-gradient(
+        135deg,
+        #f8fafc 0%,
+        #eef2ff 35%,
+        #f5f3ff 70%,
+        #ffffff 100%
+    );
+
+    color: #111827;
+}
+
+/* Glow background */
+body.light-mode::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+        radial-gradient(circle at 30% 30%,
+        rgba(168,85,247,.18),
+        transparent 35%),
+
+        radial-gradient(circle at 70% 60%,
+        rgba(59,130,246,.15),
+        transparent 35%);
+
+    pointer-events:none;
+    z-index:-1;
+}
+
+/* Text */
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3{
+    color:#111827;
+}
+
+body.light-mode p{
+    color:#4b5563;
+}
+
+/* Hero title */
+body.light-mode .hero-name{
+    color:#111827;
+}
+
+/* Cards */
+body.light-mode .card,
+body.light-mode .project-card{
+
+    background: rgba(255,255,255,.65);
+
+    backdrop-filter: blur(20px);
+
+    border:1px solid rgba(255,255,255,.7);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.08);
+
+}
+
+/* Skills cards */
+body.light-mode .skill-card{
+
+    background: rgba(255,255,255,.7);
+
+    border:1px solid rgba(0,0,0,.05);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.profile-image{
+
+    box-shadow:
+        0 0 80px rgba(168,85,247,.35);
+
+}
+body.light-mode .profile-image{
+
+    box-shadow:
+        0 0 100px rgba(168,85,247,.4),
+        0 0 180px rgba(59,130,246,.15);
+
+}
+
+body,
+section,
+div,
+button,
+a,
+h1,
+h2,
+h3,
+p{
+    transition:
+        background .5s ease,
+        color .5s ease,
+        border-color .5s ease,
+        box-shadow .5s ease;
 }
