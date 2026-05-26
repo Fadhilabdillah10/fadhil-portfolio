@@ -478,45 +478,10 @@ CUSTOM CURSOR
 
 body{
 
-    cursor:none;
+    cursor:auto;
 
 }
 
-#cursor-glow{
-
-    width:35px;
-    height:35px;
-
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    border-radius:9999px;
-
-    background:rgba(168,85,247,.35);
-
-    backdrop-filter:blur(8px);
-
-    box-shadow:
-    0 0 30px rgba(168,85,247,.9),
-    0 0 60px rgba(168,85,247,.6);
-
-    pointer-events:none;
-
-    transform:
-    translate(-50%,-50%);
-
-    z-index:99999;
-
-    transition:
-    width .25s ease,
-    height .25s ease,
-    background .25s ease;
-
-    mix-blend-mode:screen;
-
-}
 
 /*
 =========================================
