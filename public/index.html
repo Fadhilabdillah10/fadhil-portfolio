@@ -56,16 +56,9 @@ linear-gradient(to bottom, #020617, #000000);
 
     </div>
 
-    <!-- Cursor Glow -->
-    <div id="cursor-glow" class="fixed w-16 h-16 bg-purple-500/20 blur-3xl rounded-full pointer-events-none z-0">
-    </div>
+    
 
-    <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-black/30 border-b border-white/10">
-
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-end">
-
-                <div class="sidebar-nav">
+            <div class="sidebar-nav">
 
                 <a href="#home" class="nav-item active">
                     <i class="fa-solid fa-house"></i>
@@ -88,25 +81,7 @@ linear-gradient(to bottom, #020617, #000000);
                 </a>
 
             </div>
-            
-            <!-- RIGHT -->
-            
-            <div class="music-controls">
 
-            <button id="play-btn" class="music-btn">
-           <i class="fa-solid fa-play"></i>
-            </button>
-
-            <button id="pause-btn" class="music-btn">
-             <i class="fa-solid fa-pause"></i>
-            </button>
-
-        </div>
-
-
-        </div>
-
-    </nav>
 
     <!-- Hero -->
     <section id="home"
@@ -1405,6 +1380,17 @@ if (music && pauseBtn) {
 
         </script>
 
+<div class="music-floating">
+
+    <button id="play-btn" class="music-btn">
+        <i class="fa-solid fa-play"></i>
+    </button>
+
+    <button id="pause-btn" class="music-btn">
+        <i class="fa-solid fa-pause"></i>
+    </button>
+
+</div>
 </body>
 
 </html>
