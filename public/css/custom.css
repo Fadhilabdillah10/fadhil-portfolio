@@ -514,9 +514,19 @@ html.lenis body{
 
 }
 .music-controls{
-    display:flex;
-    gap:10px;
-    align-items:center;
+
+    position: fixed;
+
+    top: 24px;
+    right: 24px;
+
+    display: flex;
+    gap: 10px;
+
+    align-items: center;
+
+    z-index: 999999;
+
 }
 
 .music-btn{
@@ -590,3 +600,4 @@ body.light-mode p{
     color: #4b5563;
 
 }
+
