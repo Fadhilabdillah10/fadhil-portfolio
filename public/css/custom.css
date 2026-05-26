@@ -586,8 +586,8 @@ html.lenis body{
 
     box-shadow: 0 10px 40px rgba(0,0,0,.35);
 
-    z-index: 9999;
-
+    z-index:  999999;
+    pointer-events: auto;
 }
 
 .nav-item{
@@ -627,4 +627,8 @@ html.lenis body{
 
     color: white;
 
+}
+.hero-bg,
+.section-overlay{
+    pointer-events: none;
 }
