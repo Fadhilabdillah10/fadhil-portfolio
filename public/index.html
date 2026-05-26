@@ -74,17 +74,21 @@ linear-gradient(to bottom, #020617, #000000);
 
             </div>
 
-            <div class="music-floating">
+            <div class="music-controls">
 
-                <button id="play-btn" class="music-btn">
-                    <i class="fa-solid fa-play"></i>
-                </button>
+            <button id="theme-btn" class="music-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
 
-                <button id="pause-btn" class="music-btn">
-                    <i class="fa-solid fa-pause"></i>
-                </button>
+            <button id="play-btn" class="music-btn">
+                <i class="fa-solid fa-play"></i>
+            </button>
 
-            </div>
+            <button id="pause-btn" class="music-btn">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+
+        </div>
 
             <p class="text-gray-400 text-2xl">
                 Hello, I'm
@@ -1189,6 +1193,40 @@ if (music && pauseBtn) {
 
         </script>
 
+/*
+=========================================
+DARK / LIGHT MODE
+=========================================
+*/
+
+const themeBtn = document.getElementById("theme-btn");
+
+if(localStorage.getItem("theme") === "light"){
+
+    document.body.classList.add("light-mode");
+
+    themeBtn.innerHTML =
+    '<i class="fa-solid fa-sun"></i>';
+
+}
+
+themeBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("light-mode");
+
+    const isLight =
+    document.body.classList.contains("light-mode");
+
+    localStorage.setItem(
+        "theme",
+        isLight ? "light" : "dark"
+    );
+
+    themeBtn.innerHTML = isLight
+        ? '<i class="fa-solid fa-sun"></i>'
+        : '<i class="fa-solid fa-moon"></i>';
+
+});
 
 </body>
 
