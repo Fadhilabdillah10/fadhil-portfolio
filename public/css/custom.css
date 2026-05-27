@@ -895,3 +895,47 @@ body.light-mode #projects .flex.flex-wrap span{
     color:#334155 !important;
 
 }
+/* =========================
+   AI BUTTON
+========================= */
+
+.ai-btn{
+
+    position: fixed;
+
+    left: 25px;
+    bottom: 25px;
+
+    width: 55px;
+    height: 55px;
+
+    font-size: 24px;
+
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,255,255,.05);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.25);
+
+    transition: .3s ease;
+
+    z-index: 9999;
+
+}
+
+.ai-btn:hover{
+
+    transform: translateY(-2px);
+
+    background: rgba(255,255,255,.08);
+
+}
