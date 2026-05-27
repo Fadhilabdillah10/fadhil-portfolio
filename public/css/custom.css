@@ -829,16 +829,27 @@ p{
 }
 
 body.light-mode .project-card,
+/* ==========================
+   LIGHT MODE SKILLS
+========================== */
+
 body.light-mode .skill-card{
 
-    background: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,.85) !important;
+
+    border: 1px solid rgba(0,0,0,.08) !important;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
 
     backdrop-filter: blur(20px);
 
-    border: 1px solid rgba(0,0,0,0.08);
+}
 
-    box-shadow:
-        0 10px 30px rgba(0,0,0,0.08),
-        0 0 40px rgba(168,85,247,0.08);
+body.light-mode .skill-card h3{
+    color:#111827 !important;
+}
 
+body.light-mode .skill-card p{
+    color:#4b5563 !important;
 }
