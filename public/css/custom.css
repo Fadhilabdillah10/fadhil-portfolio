@@ -903,11 +903,11 @@ body.light-mode #projects .flex.flex-wrap span{
 
     position: fixed;
 
-    left: 25px;
-    bottom: 25px;
+    left: 20px;
+    bottom: 20px;
 
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
 
     font-size: 24px;
 
